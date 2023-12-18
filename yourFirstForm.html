@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MDN - Your first form (https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)</title>
+</head>
+
+<body>
+    <section class="first-form-section">
+        <form class="first-form-form" action="https://httpbin.org/post" method="post">
+            <fieldset style="width: 100%; border-radius: 10px; border: 1px solid #999;">
+                <legend>Contact</legend>
+                <ul class="first-form-ul">
+                    <li>
+                        <label class="first-form-label" for="name">Name:</label>
+                        <input class="first-form-input" type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label class="first-form-label" for="mail">Email:</label>
+                        <input class="first-form-input" type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label class="first-form-label" for="msg">Message:</label>
+                        <textarea class="first-form-textarea" id="msg" name="user_message"></textarea>
+                    </li>
+                    <li>
+                        <button class="first-form-button" type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </fieldset>
+
+        </form>
+    </section>
+</body>
+
+</html>
